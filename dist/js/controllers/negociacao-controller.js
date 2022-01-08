@@ -2,6 +2,7 @@ import { Negociacao } from "../models/negociacao.js";
 import { Negociacoes } from "../models/negociacoes.js";
 import { NegociacoesView } from "../views/negociacoes-view.js";
 import { MensagemView } from "../views/mensagem-view.js";
+import { DiasDaSemana } from "../enums/dias-da-semana.js";
 export class NegociacaoController {
     constructor() {
         this.negociacoes = new Negociacoes();
@@ -40,6 +41,6 @@ export class NegociacaoController {
         this.mensagemView.update('Negociação adicionada com sucesso!');
     }
     ehDiaUtil(data) {
-        return data.getDay() > 0 && data.getDay() < 6;
+        return data.getDay() > DiasDaSemana.DOMING0 && data.getDay() < DiasDaSemana.SABADO;
     }
 }
