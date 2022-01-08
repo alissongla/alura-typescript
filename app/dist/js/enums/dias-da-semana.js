@@ -1,6 +1,6 @@
 export var DiasDaSemana;
 (function (DiasDaSemana) {
-    DiasDaSemana[DiasDaSemana["DOMING0"] = 0] = "DOMING0";
+    DiasDaSemana[DiasDaSemana["DOMINGO"] = 0] = "DOMINGO";
     DiasDaSemana[DiasDaSemana["SEGUNDA"] = 1] = "SEGUNDA";
     DiasDaSemana[DiasDaSemana["TERCA"] = 2] = "TERCA";
     DiasDaSemana[DiasDaSemana["QUARTA"] = 3] = "QUARTA";
